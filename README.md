@@ -94,7 +94,7 @@ poetry run grafana-dashboard-manager \
 
 - The home dashboard new deployment needs the default home dashboard to be manually set in the web UI, as the API to set the organisation default dashboard seems to be broken, at least on v8.2.3.
 - Currently expects a hardcoded home dashboard with `uid=home` to set as the home by default.
-can be disabled with the option `skip-home`.
+Can be disabled with the option `--skip-home`.
 - Does not handle upload of dashboards more deeply nested than Grafana supports.
 - Does not support multi-organization deployments.
 - The `version` of the dashboard is removed of the json files in order to avoid unneeded diff in git of identical dashboards with diferent versions.
